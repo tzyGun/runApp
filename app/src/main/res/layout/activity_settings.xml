@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sylwek.sandalrun.Settings">
+
+    <TextView
+        android:id="@+id/onTimeRefreshTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS on Time refresh [ms]"
+        app:layout_constraintRight_toLeftOf="@+id/onTimeRefreshEditText"
+        android:layout_marginRight="31dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="59dp"
+        app:layout_constraintHorizontal_bias="0.405" />
+
+    <TextView
+        android:id="@+id/onDistanceRefreshTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS on distance refresh [m]"
+        android:layout_marginTop="34dp"
+        app:layout_constraintTop_toBottomOf="@+id/onTimeRefreshTextView"
+        app:layout_constraintRight_toLeftOf="@+id/onDistanceRefreshEditText"
+        android:layout_marginRight="31dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/onTimeRefreshEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Value in milis"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/onDistanceRefreshEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Value in meters"
+        android:inputType="numberDecimal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onTimeRefreshEditText" />
+
+</android.support.constraint.ConstraintLayout>
